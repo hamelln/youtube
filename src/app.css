@@ -1,11 +1,9 @@
 .masthead-container {
-    border: 1px solid black;
     height: 56px;
     padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     background-color: black;
     color: whitesmoke;
 }
@@ -21,10 +19,26 @@ div {
     display: flex;
 }
 
+.ytd-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.seatch-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
 .yt-searchbox {
     position: relative;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: white;
     border: 1px solid gainsboro;
     border-right: none;
     border-radius: 2px 0 0 2px;
@@ -38,7 +52,7 @@ div {
 #search-icon-legacy.ytd-searchbox {
     cursor: pointer;
     width: 65px;
-    border: 1px solid palegreen;
+    border: 1px solid gray;
     background-color: yellow;
     border-radius: 0 2px 2px 0;
     margin: 0;
@@ -46,26 +60,28 @@ div {
     --yt-icon-button-icon-height: 24px;
 }
 
+yt-icon {
+    width: var(--yt-icon-button-icon-width);
+    height: var(--yt-icon-button-icon-height);
+}
+
 button {
+    width: 65px;
+    border: 1px solid grey;
+    background-color: grey;
     appearance: auto;
     text-rendering: auto;
-    color: -internal-light-dark(black, white);
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
     display: inline-block;
-    text-align: center;
-    align-items: flex-start;
     cursor: pointer;
     box-sizing: border-box;
     font: 400 13.3333px Arial;
     padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+    border-color: grey;
 }
 
 input {
@@ -76,4 +92,14 @@ input {
     width: 100%;
     outline: none;
     background-color: transparent;
+}
+
+img#search {
+    width: 15px;
+    height: 15px;
+}
+
+img#logo {
+    width: 30px;
+    height: 30px;
 }
