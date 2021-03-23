@@ -1,16 +1,50 @@
+/* default */
+
+div {
+    margin: 0;
+    background: transparent;
+}
+
+input {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+
+button {
+    width: 65px;
+    border: 1px solid grey;
+    background-color: grey;
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-color: grey;
+}
+
+/* header */
+
 .masthead-container {
     height: 56px;
+    width: 100%;
     padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: black;
     color: whitesmoke;
-}
-
-div {
-    margin: 0;
-    background: transparent;
 }
 
 .search-container {
@@ -65,35 +99,6 @@ yt-icon {
     height: var(--yt-icon-button-icon-height);
 }
 
-button {
-    width: 65px;
-    border: 1px solid grey;
-    background-color: grey;
-    appearance: auto;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
-    font: 400 13.3333px Arial;
-    padding: 1px 6px;
-    border-color: grey;
-}
-
-input {
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    height: auto;
-    width: 100%;
-    outline: none;
-    background-color: transparent;
-}
-
 img#search {
     width: 15px;
     height: 15px;
@@ -118,8 +123,10 @@ img#logo {
     z-index: 0;
 }
 
-.items-container {
-    max-width: 1280px;
-    display: flex;
-    flex-direction: row;
+/* frame */
+
+.frame {
+    padding: 16px 24px;
+    text-align: center;
+    border: 3px solid rebeccapurple;
 }
