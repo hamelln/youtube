@@ -5,7 +5,7 @@ class Frame extends Component {
         return (
             <>
             <div className="frame">
-                test
+                
             </div>
             </>
         );
