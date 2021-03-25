@@ -132,6 +132,13 @@ img#logo {
 }
 
 .content-container {
-    display: block;
+    display: inherit;
     border: 2px solid palegreen;
+    margin: 2px;
+    height: 300px;
+    width: 400px;
+}
+
+#contents_list {
+    display: inline-block;
 }
