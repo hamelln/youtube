@@ -4,6 +4,7 @@ import Content from './content';
 class Contents extends Component {
     render() {
         return (
+            <div className="frame">
             <div className="contents">
                 <section id="contents_list" className="section">
                     <h2>test</h2>
@@ -14,6 +15,7 @@ class Contents extends Component {
                         />
                     ))}
                     </section>
+            </div>
             </div>
         );
     }
