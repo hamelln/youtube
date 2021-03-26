@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <div className="masthead-container">
                 <div className="ytd-container">
-                <img id="logo" src={process.env.PUBLIC_URL + '/images/logo.png'} /> 
+                <img id="logo" alt="" src={process.env.PUBLIC_URL + '/images/logo.png'} /> 
                 Youtube
                 </div>
                 <div className="search-container">
@@ -13,7 +13,7 @@ class Header extends Component {
                         <input id="search" type="text" placeholder="검색"/>
                     </div>
                     <button id="search-icon-legacy.ytd-searchbox">
-                    <img id="search" src={process.env.PUBLIC_URL + '/images/search.png'} /> 
+                    <img id="search" alt="" src={process.env.PUBLIC_URL + '/images/search.png'} /> 
                     </button>
                 </div>
             </div>

@@ -1,0 +1,9 @@
+.frame {
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.contents_list {
+    display: flex;
+    flex-wrap: wrap;
+}

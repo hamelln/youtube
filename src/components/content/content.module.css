@@ -1,0 +1,24 @@
+.content_container {
+    display: flex;
+    border: 2px solid lightgrey;
+    margin: 2px;
+    padding: 0.2em;
+}
+
+.video {
+    width: 400px;
+    display: block;
+    align-items: center;
+    border: 1px solid lightgray;
+    transition: 250ms ease-in;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.metadata {
+    margin-left: 0.2em;
+}
+
+.title {
+    font-weight: bold;
+}

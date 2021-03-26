@@ -1,30 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './app.css';
-import Contents from './components/contents';
+import Contents from './components/contents/contents';
 import Header from './components/header';
-import axios from "axios";
 
-class App extends Component {
+function App() {  
+
+  const [videos, setVideos] = useState([]);
   
-  state = {
-    contents: [
-      {id: 1, name: "test__1", desc: "desc__test", title: "title__test", link: "link__test", img: "img__test"},
-      {id: 2, name: "test__2", desc: "desc__test", title: "title__test", link: "link__test", img: "img__test"},
-      {id: 3, name: "test__3", desc: "desc__test", title: "title__test", link: "link__test", img: "img__test"},
-      {id: 4, name: "test__4", desc: "desc__test", title: "title__test", link: "link__test", img: "img__test"},
-    ],
-  };  
-
+  useEffect(()=> {
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+    
+    fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyDBseE44a-LvZEexvGVNz-T5wROAltQbvM", requestOptions)
+      .then(response => response.json())
+      .then(result => setVideos(result.items))
+      .catch(error => console.log('error', error));
+  }, []);
 
   
-render() {
   return (
   <>
   <Header/>
-  <Contents contents={this.state.contents}/>
+  <Contents contents={videos} />
   </>
   );
-}
+
 }
 
 export default App;
